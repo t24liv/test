@@ -1,10 +1,12 @@
+import cv2
+import numpy as np
+import os
+
 print('Hello')
 print('hello from pyCharm')
 print('Hello from the other pc')
 
-import cv2
-import numpy as np
-import os
+
 from shutil import copyfile
 
 # this code tests an image with 4 different color spaces to choose the optimal color space
