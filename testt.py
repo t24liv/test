@@ -12,11 +12,14 @@ from shutil import copyfile
 # make an output folder and specify its path
 
 # change the input path here.
-input_path = "/home/isu/PycharmProjects/building_classifier/input"
+input_path = "/home/isu/PycharmProjects/test/input"
+if not os.path.exists(input_path):
+    os.makedirs(input_path)
 
 # change the output path here.
-output_path = "/home/isu/PycharmProjects/building_classifier/output/"
-
+output_path = "/home/isu/PycharmProjects/test/output/"
+if not os.path.exists(output_path):
+    os.makedirs(output_path)
 # change test image extension here:
 image_ext = ".jpg"
 
