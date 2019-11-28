@@ -28,7 +28,6 @@ lab_output = output_path + "LAB"
 if not os.path.exists(lab_output):
     os.makedirs(lab_output)
 
-
 for filename in os.listdir(input_path):
     if filename.endswith(image_ext):
         bright = cv2.imread(os.path.join(input_path, filename))
@@ -40,7 +39,7 @@ for filename in os.listdir(input_path):
         bgr = [249, 251, 252]
         thresh = 3
 
-        #filename2 = "{} - {}, {}, {} - {}.jpg"
+        # filename2 = "{} - {}, {}, {} - {}.jpg"
 
         brightLAB = cv2.cvtColor(bright, cv2.COLOR_BGR2LAB)
 
